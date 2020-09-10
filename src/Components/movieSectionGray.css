@@ -1,0 +1,37 @@
+.movieSection {
+  background-color: #ececea;
+  padding-top: 10px;
+}
+
+.movieSection__header {
+  width: 25vw;
+  height: 10vh;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ececea;
+  -webkit-box-shadow: -1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  color: #33d7d7;
+  margin-bottom: 10px;
+}
+
+.movieSection__movies {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  overflow-x: scroll;
+  padding: 15px;
+}
+
+.movieSection__movies::-webkit-scrollbar {
+  display: none;
+}
+
+.movie__poster {
+  object-fit: contain;
+  width: 150px;
+  margin: 0 2px;
+}

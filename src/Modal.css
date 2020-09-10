@@ -1,0 +1,201 @@
+/* Roboto font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.movie__infoImg {
+  width: 100%;
+  height: 350px;
+}
+
+.movie__info {
+  position: relative;
+  bottom: 4px;
+  background-color: #2e91fc;
+  color: white;
+  padding: 10px;
+}
+
+.movie__info h3:first-of-type {
+  margin-bottom: 10px;
+}
+
+.movie__sections {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 15px;
+}
+
+.movie__sectionsAbout,
+.movie__sectionsReviews,
+.movie__sectionsInfoDescTitle,
+.movie__sectionsInfoCastTitle {
+  font-size: 1.9rem;
+}
+
+.movieInfo__sectionsAbout,
+.movieInfo__sectionsReviews {
+  flex-basis: 50%;
+  cursor: pointer;
+}
+
+.movieInfo__sectionsUnderline {
+  border-bottom: 2px solid skyblue;
+}
+
+.movie__sectionsInfoDesc {
+  padding: 0 10px;
+  text-indent: 2vw;
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+
+/* .movie__sectionsClose {
+  position: absolute;
+  right: 0;
+} */
+
+.movie__sectionsInfoCastInfo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.carousel-button-group {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  /*   margin-left: 120px; */
+  position: absolute;
+  left: 20px;
+}
+
+.cast__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.movie__reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.movie__reviewDesc {
+  border-bottom: 2px solid black;
+  padding-top: 10px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  line-height: 2;
+  font-weight: 600;
+}
+
+.movie__reviewDescM {
+  margin-top: 10px;
+  padding: 0 10px 10px 10px;
+}
+
+.movie__reviewDesc p:first-of-type {
+  text-indent: 20px;
+}
+
+.movie__reviewDesc > div p:first-of-type {
+  margin-right: 40px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.movie__reviewAuthor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1064px) and (min-width: 971px) {
+  .movie__reviewDesc > div p:first-of-type {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .movie__reviewDesc > div p:first-of-type {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 896px) {
+  .carousel-button-group {
+    justify-content: space-around;
+    left: 1px;
+  }
+}
+.container {
+  padding: 40px;
+  background: #419be0;
+}
+
+.slick-slide img {
+  margin: auto;
+}
+/* 
+.movies__sectionsCasts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.carousel-button-group-cast {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+  /* bottom: 820px; */
+  margin-right: 8px;
+  width: 49vw;
+}
+
+.cast-test > .react-multi-carousel-list > .react-multi-carousel-track {
+  height: 900px;
+  background-color: #0f0f0f;
+}
+
+/* @media only screen and (max-width: 1248px) and (min-width: 1175px) {
+  .carousel-button-group-cast {
+    bottom: 880px;
+  }
+}
+
+@media only screen and (max-width: 1174px) and (min-width: 1081px) {
+  .carousel-button-group-cast {
+    bottom: 950px;
+  }
+}
+
+@media only screen and (max-width: 1080px) and (min-width: 1009px) {
+  .carousel-button-group-cast {
+    bottom: 1020px;
+  }
+} */
+
+@media only screen and (max-width: 1008px) and (min-width: 960px) {
+  /*   .carousel-button-group-cast {
+    bottom: 1080px;
+  } */
+  .movieSection__castTitleM {
+    font-size: 2.4rem !important;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  /* .carousel-button-group-cast {
+    bottom: 800px;
+    margin-right: 97px;
+  } */
+  .movieSection__castTitleM {
+    font-size: 2.4rem !important;
+  }
+}

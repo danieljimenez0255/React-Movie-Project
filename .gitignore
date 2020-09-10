@@ -25,3 +25,5 @@ yarn-error.log*
 
 #stories
 stories
+main.js
+preview.js

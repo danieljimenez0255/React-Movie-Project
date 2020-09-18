@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./movieSectionGray.css";
-import { Card, Modal, Button } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { Modal, Button } from "@material-ui/core";
 import { mainURL } from "../Data/https";
+import { useStylesM, buttonStyles } from "../util.js";
 import "../Modal.css";
 import MovieInfo from "./MovieInfo";
 
@@ -36,43 +36,12 @@ export const MovieSection = ({
     let movieAll = [movieC.data.cast, movieI.data, movieR.data.results];
     setMovieInfoM(movieAll);
   };
-  console.log("s", movieInfoM[2]);
+
   if (movieInfoM.length > 0 && count === 0) {
     count++;
   }
-  const useStyles = makeStyles((theme) => ({
-    paper: {
-      position: "relative",
-      width: "50vw",
-      height: "90vh",
-      overflowY: "scroll",
-      backgroundColor: theme.palette.background.paper,
-      border: "2px solid #000",
-      boxShadow: theme.shadows[5],
-      fontFamily: `"Roboto", sans-serif`,
-      "&::-webkit-scrollbar": {
-        display: "none",
-      },
-      "& h3": {
-        margin: 0,
-      },
-      [theme.breakpoints.down("sm")]: {
-        width: "70vw",
-      },
-      [theme.breakpoints.down("xs")]: {
-        width: "90vw",
-      },
-    },
-  }));
 
-  const buttonStyles = makeStyles((theme) => ({
-    sty: {
-      position: "absolute",
-      right: "10px",
-      marginBottom: "10px",
-    },
-  }));
-  const classes = useStyles();
+  const classes = useStylesM();
   const closeClass = buttonStyles();
   return (
     <div className="movieSection">

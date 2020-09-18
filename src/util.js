@@ -2,6 +2,39 @@ import React from "react";
 import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
+export const useStylesM = makeStyles((theme) => ({
+  paper: {
+    position: "relative",
+    width: "50vw",
+    height: "90vh",
+    overflowY: "scroll",
+    backgroundColor: theme.palette.background.paper,
+    border: "2px solid #000",
+    boxShadow: theme.shadows[5],
+    fontFamily: `"Roboto", sans-serif`,
+    "&::-webkit-scrollbar": {
+      display: "none",
+    },
+    "& h3": {
+      margin: 0,
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "70vw",
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: "90vw",
+    },
+  },
+}));
+
+export const buttonStyles = makeStyles((theme) => ({
+  sty: {
+    position: "absolute",
+    right: "10px",
+    marginBottom: "10px",
+  },
+}));
+
 // Main Info js exports
 export const useStyles = makeStyles((theme) => ({
   paper: {
